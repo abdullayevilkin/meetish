@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ui1 · "Bu gün" (ana səhifə) yekun planı.
+  ilkin-in variantlardan (A–E) seçdiyi hissələr və qəbul olunmuş qərarlar.
+  Lövhələr: ../02-dizayn/boards/BuGunUI1.dc.html, ../02-dizayn/boards/BuGunUI1Bubble.dc.html
+-->
+<screen id="ui1" name="Bu gün" platform="android" updated="2026-10-25">
+  <sources>
+    <variant id="A" title="Zaman xətti (dataviz)"/>
+    <variant id="B" title="Material 3 (Android)"/>
+    <variant id="C" title="Cümlə ilə gün (artifact-design)"/>
+    <variant id="D" title="Baş barmaq zonası (Laws of UX)"/>
+    <variant id="E" title="Nielsen + Gestalt"/>
+  </sources>
+
+  <tokens>
+    <color name="ink" value="#111318"/>
+    <color name="ink-2" value="#5B606B"/>
+    <color name="accent" value="#D9431F" usage="yalnız 'indi/tezliklə' və Qoşul"/>
+    <color name="accent-soft" value="#FDEBE5" usage="açılmış planın detal paneli"/>
+    <color name="line" value="#ECEDEF"/>
+    <color name="bg" value="#FAFAFA"/>
+    <color name="surface" value="#FFFFFF"/>
+    <color name="free" value="#0F8A5F" usage="'boş' statusu, avatar halqası"/>
+    <font role="heading" family="Manrope"/>
+    <font role="body" family="Inter"/>
+    <grid step="4"/>
+    <radius card="20" sheet="28"/>
+    <touch-target min="48dp"/>
+  </tokens>
+
+  <layout>
+    <part n="2" from="C" status="approved" name="Başlıq cümləsi">
+      <text>6 dostun boşdur, 4 plan var.</text>
+      <rule>"Bu gün" sözü yoxdur (nə başlıqda, nə tarix sətirində).</rule>
+    </part>
+
+    <part n="3" from="C+E" status="approved" name="İndi boş olanlar">
+      <rule>C-nin böyük avatar sırası adlarla; halqa rəngi yaşıl (boş statusu).</rule>
+      <rule>E-dən "Təklif et" bölmə başlığının yanında kiçik link kimi.</rule>
+      <rule>D-nin gün hissəsi filtri çıxarıldı.</rule>
+      <rule>Avatar dostun profil şəklidir (aşağı keyfiyyətli saxlanır); şəkli açmaq/böyütmək hələlik yoxdur.</rule>
+      <interaction trigger="avatar-tap">Avatardan AŞAĞI açılan bubble/popover, avatara bağlı.</interaction>
+    </part>
+
+    <part n="10" status="approved" name="Dəvətlər (zəng ikonu yoxdur)">
+      <rule>Ayrıca tab və zəng yoxdur.</rule>
+      <rule>Gələn dəvət siyahının üstündə kart kimi: "Kamran səni 15:00-da qəhvəyə çağırır" · Qəbul / Yox.</rule>
+      <rule>"Leyla planına qoşuldu" kimi yeniliklər plan sətirində kiçik "+1 yeni" kimi görünür.</rule>
+      <later>4-cü tab "Dəvətlər" yalnız lazım olsa.</later>
+    </part>
+
+    <part n="5" from="E" status="approved" name="Plan siyahısı">
+      <rule>E-nin qruplaşdırılmış siyahısı (Günorta / Axşam); E-nin "İndi" sətri çıxarıldı.</rule>
+      <rule>Hər plan ayrıca kartdır, bir qutuda birləşdirilmir.</rule>
+      <rule>Plan sətri (tab) ağ qalır və aç/bağla oxunu saxlayır.</rule>
+      <rule>Toxunanda detal paneli AŞAĞI açılır (accordion), sətrə bitişik, tam en, accent-soft fonda; panelin öz düyməsi yoxdur.</rule>
+      <rule>Tünd accent yalnız "Qoşul" düyməsində.</rule>
+    </part>
+
+    <part n="8" status="approved" name="Qruplar">
+      <rule>İndiyə ən yaxın qrup açıq, digərləri xülasə ilə bağlı.</rule>
+    </part>
+
+    <part n="9" status="approved" name="Qoşulduqdan sonra geri al">
+      <rule>Üzən toast yoxdur (aşağı sıra ilə toqquşur).</rule>
+      <rule>"Qoşul" düyməsi eyni sətirdə ~5 saniyə "Gedirsən ✓ · Geri al" olur.</rule>
+    </part>
+
+    <part n="11" status="approved-for-now" name="Öz planın">
+      <rule>Eyni sətir görünüşü öz vaxt qrupunda, "Sənin planın" etiketi, gələnlərin avatarları ("3 nəfər gəlir"), Qoşul düyməsi yoxdur.</rule>
+      <expanded>Düzəlt (vaxt/yer) · Paylaş (link) · Ləğv et (inline təsdiq, qoşulanlara bildiriş gedir)</expanded>
+      <roles>
+        <role of="başqasının planı">Qoşul</role>
+        <role of="getdiyin plan">Gedirsən ✓ + Getmirəm</role>
+        <role of="sənin planın">sahib əməliyyatları</role>
+      </roles>
+      <todo>Funksional detallar sonra müzakirə olunacaq.</todo>
+    </part>
+
+    <part n="1+6" from="E+D" status="approved" name="Status (aşağı sıra)">
+      <rule>Status D-nin yerinə, aşağı sıraya keçir, "+ Planla" ilə eyni sətirdə.</rule>
+      <rule>Dizayn E-dən: rəngli nöqtə + solğun fon 3 vəziyyətə görə (boş=yaşıl, planda=accent, gizli=boz), mətn "Sən boşsan · 14:00-a qədər", göz ikonu ("kimlər görür"), qələm ikonu (aria-label "Statusu dəyiş", 44px). D-nin switch-i yoxdur.</rule>
+      <interaction trigger="pill-tap">Aşağıdan qalxan sheet: vəziyyət (Boşam / Plandayam / Gizlət) + müddət (30 dəq / 1 saat / Axşama qədər).</interaction>
+    </part>
+
+    <part n="4" from="C" status="approved" name="FAB">
+      <rule>C-nin genişlənmiş FAB-ı, sağ aşağı (sağ baş barmaq zonası), mətn "+ Planla".</rule>
+      <rule>E-nin başlıqdakı "Plan paylaş" düyməsini əvəz edir.</rule>
+    </part>
+
+    <part n="7" from="C" status="approved" name="Nav bar və fon">
+      <rule>Ağ, nazik üst xətt; tablar: Bu gün / Dostlar / Profil.</rule>
+    </part>
+  </layout>
+
+  <board file="../02-dizayn/boards/BuGunUI1Bubble.dc.html" name="Avatar bubble" status="awaiting-feedback">
+    <rule>Kamranın avatarından aşağı açılır, oxu avatara baxır.</rule>
+    <rule>Ad + onun öz statusu: "15:00-a qədər boşdur" (yer göstərilmir).</rule>
+    <rule>"İndi görüşək?" çipləri: Qəhvə? / Nahar? / Gəzinti? (bir toxunuşla dəvət, vaxt "indi").</rule>
+    <rule>"Başqa plan təklif et" → Sürətli plan, Kamran seçilmiş.</rule>
+    <rule>Şəkil böyümür, bəyənmə yoxdur; çöldə toxunmaq və ya ✕ bağlayır.</rule>
+  </board>
+
+  <not-yet-drawn>
+    <item>Status sheet</item>
+    <item>Geri al vəziyyəti</item>
+    <item>Öz planın açılmış halı</item>
+    <item>Ləğv et təsdiqi</item>
+  </not-yet-drawn>
+</screen>

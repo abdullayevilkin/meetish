@@ -1,0 +1,226 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-23T08:35:00Z"
+  },
+  "title": "Meetish Android dizaynı",
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1200,
+      "h": 980,
+      "title": "Dizayn sistemi"
+    },
+    "Home.dc.html": {
+      "x": 0,
+      "y": 1350,
+      "w": 390,
+      "h": 844,
+      "title": "1 · Bu gün (lent)",
+      "radius": 36
+    },
+    "QuickPost.dc.html": {
+      "x": 470,
+      "y": 1350,
+      "w": 390,
+      "h": 844,
+      "title": "2 · Sürətli plan",
+      "radius": 36
+    },
+    "PlanDetail.dc.html": {
+      "x": 940,
+      "y": 1350,
+      "w": 390,
+      "h": 844,
+      "title": "3 · Plan və qoşulma",
+      "radius": 36
+    },
+    "Friends.dc.html": {
+      "x": 1410,
+      "y": 1350,
+      "w": 390,
+      "h": 844,
+      "title": "4 · Dostlar və qruplar",
+      "radius": 36
+    },
+    "Profile.dc.html": {
+      "x": 1880,
+      "y": 1350,
+      "w": 390,
+      "h": 844,
+      "title": "5 · Profil",
+      "radius": 36
+    },
+    "BuGunA.dc.html": {
+      "x": 0,
+      "y": 2700,
+      "w": 390,
+      "h": 844,
+      "title": "A · Zaman xətti (dataviz)",
+      "radius": 36
+    },
+    "BuGunB.dc.html": {
+      "x": 470,
+      "y": 2700,
+      "w": 390,
+      "h": 844,
+      "title": "B · Material 3 (Android)",
+      "radius": 36
+    },
+    "BuGunC.dc.html": {
+      "x": 940,
+      "y": 2700,
+      "w": 390,
+      "h": 844,
+      "title": "C · Cümlə ilə gün (artifact-design)",
+      "radius": 36
+    },
+    "BuGunD.dc.html": {
+      "x": 0,
+      "y": 4600,
+      "w": 390,
+      "h": 844,
+      "title": "D · Baş barmaq zonası (Laws of UX)",
+      "radius": 36
+    },
+    "BuGunE.dc.html": {
+      "x": 470,
+      "y": 4600,
+      "w": 390,
+      "h": 844,
+      "title": "E · Nielsen + Gestalt",
+      "radius": 36
+    },
+    "BuGunUI1.dc.html": {
+      "x": 0,
+      "y": 6500,
+      "w": 390,
+      "h": 844,
+      "title": "ui1 · Bu gün (yekun)",
+      "radius": 36
+    },
+    "BuGunUI1Bubble.dc.html": {
+      "x": 980,
+      "y": 6500,
+      "w": 390,
+      "h": 844,
+      "title": "ui1 · Avatar bubble",
+      "radius": 36
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Home.dc.html",
+    "QuickPost.dc.html",
+    "PlanDetail.dc.html",
+    "Friends.dc.html",
+    "Profile.dc.html",
+    "BuGunA.dc.html",
+    "BuGunB.dc.html",
+    "BuGunC.dc.html",
+    "BuGunD.dc.html",
+    "BuGunE.dc.html",
+    "BuGunUI1.dc.html",
+    "BuGunUI1Bubble.dc.html"
+  ],
+  "notes": {
+    "t1": {
+      "x": 0,
+      "y": -300,
+      "text": "Meetish — minimalist dizayn sistemi",
+      "kind": "title1",
+      "maxW": 1200
+    },
+    "t2": {
+      "x": 0,
+      "y": 1080,
+      "text": "Əsas ekranlar (Android, Material 3)",
+      "kind": "title1",
+      "maxW": 2270
+    },
+    "t3": {
+      "x": 0,
+      "y": 2420,
+      "text": "“Bu gün” — 3 yeni variant",
+      "kind": "title1",
+      "maxW": 1330
+    },
+    "sA": {
+      "x": 0,
+      "y": 3624,
+      "w": 390,
+      "fill": "blue",
+      "size": "s",
+      "text": "A · dataviz skill\nGün bir zaman oxu kimi: planlar saatına və müddətinə görə yerləşir, qırmızı xətt “indi”. Yuxarıda hər saat neçə dostun boş olduğunu göstərən tək rəngli (ardıcıl) sütun qrafiki. Skilldən: forma seçimi, bir ox, tək rəngli şkala, birbaşa etiketlər, rəng tək başına məna daşımır."
+    },
+    "sB": {
+      "x": 470,
+      "y": 3624,
+      "w": 390,
+      "fill": "green",
+      "size": "s",
+      "text": "B · Material 3 qaydaları (Android)\nStatus kartı + keçid (“İndi boşam”), seqmentli düymə, tonal “Növbəti” kartı, 64dp siyahı sətirləri, aktiv indikatorlu nav bar, genişlənmiş FAB. Mobile Design System plugin-i quraşdırılsa, bu variant onun Material 3 tokenləri ilə rəsmiləşdirilə bilər."
+    },
+    "sC": {
+      "x": 940,
+      "y": 3624,
+      "w": 390,
+      "fill": "orange",
+      "size": "s",
+      "text": "C · artifact-design + kətanın craft qaydaları\nMətn-öncəlikli: günün xülasəsi bir cümlə, “İndi boş olanlar” avatar sırası, planlar insan dilində cümlələr kimi. Skilldən: mövzuya bağlı tək cəsarətli qərar (tipoqrafiya), yalnız bir yerdə vurğu, filler yox."
+    },
+    "t4": {
+      "x": 0,
+      "y": 4320,
+      "text": "B + C tərzində, başqa UX qaydaları ilə",
+      "kind": "title1",
+      "maxW": 860
+    },
+    "sD": {
+      "x": 0,
+      "y": 5524,
+      "w": 390,
+      "fill": "purple",
+      "size": "s",
+      "text": "D · Laws of UX\nFitts: əsas hərəkətlər (Qoşul, İndi boşam, Plan paylaş) aşağıda, baş barmağın çatdığı yerdə. Hick: ekranda bir əsas qərar, Növbəti plan. Miller: gün 3 hissəyə bölünür (İndi / Günorta / Axşam). Von Restorff: vurğu rəngi yalnız bir kartda. Yuxarı hissə yalnız baxmaq üçündür."
+    },
+    "sE": {
+      "x": 470,
+      "y": 5524,
+      "w": 390,
+      "fill": "teal",
+      "size": "s",
+      "text": "E · Nielsen evristikaları + Gestalt\nSistem statusu həmişə görünür (yuxarıda “Sən boşsan” zolağı). Gestalt ümumi sahə: planlar günün hissələrinə görə qruplaşır. Mərhələli açılma: Axşam bağlı, xülasə ilə. İstifadəçi nəzarəti: “Qoşuldun · Geri al” bildirişi. Tanıma > xatırlama: hər ikonun yanında mətn."
+    },
+    "t5": {
+      "x": 0,
+      "y": 6220,
+      "text": "ui1 · Yekun “Bu gün”",
+      "kind": "title1",
+      "maxW": 900
+    },
+    "sU": {
+      "x": 470,
+      "y": 6500,
+      "w": 430,
+      "fill": "orange",
+      "size": "s",
+      "text": "ui1 — haradan gəldi\n• Başlıq cümləsi: C (\"bu gün\" sözü çıxarıldı)\n• İndi boş olanlar: C sırası, yaşıl halqa, E-dən \"Təklif et\"; toxunanda avatardan aşağı bubble (içi sonra)\n• Dəvət kartı siyahının üstündə (zəng yoxdur)\n• Siyahı: E qrupları; indiyə yaxın qrup açıq, plan aşağı açılır, açıq qırmızı fon, tünd qırmızı yalnız Qoşul\n• Öz planın: \"Sənin planın\", kim gəlir, +1 yeni; açanda Düzəlt / Paylaş / Ləğv et\n• Aşağı sıra: status pill (D yeri, E dizaynı: rəngli nöqtə + solğun fon, göz, qələm) + C-dən \"+ Planla\"\n• Geri al: Qoşul düyməsi bir neçə saniyə \"Gedirsən ✓ · Geri al\" olur\n• Nav bar və fon: C"
+    },
+    "sV": {
+      "x": 1450,
+      "y": 6500,
+      "w": 380,
+      "fill": "green",
+      "size": "s",
+      "text": "Avatar bubble (təklif)\n• Kamranın avatarından aşağı açılır, oxu avatara baxır\n• Ad + onun öz yazdığı status: \"15:00-a qədər boşdur\" (yer yoxdur)\n• İndi görüşək? Qəhvə? / Nahar? / Gəzinti? — bir toxunuşla dəvət gedir, vaxt \"indi\"\n• Başqa plan təklif et → Sürətli plan, Kamran seçilmiş\n• Şəkil böyümür, bəyənmə yoxdur; çöldə toxunmaq və ya ✕ bağlayır"
+    }
+  },
+  "designSystems": []
+}

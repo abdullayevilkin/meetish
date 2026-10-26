@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<title>Meetish dizayn sistemi</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#D9431F}a:hover{color:#B23517}
+</style>
+</helmet>
+<div style="width: 1200px; height: 980px; box-sizing: border-box; padding: 56px 64px; background: #FAFAFA; color: #111318; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 40px">
+
+  <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <div style="display: flex; align-items: center; gap: 10px">
+        <div style="width: 36px; height: 36px; border-radius: 12px; background: #111318; display: flex; align-items: center; justify-content: center">
+          <div style="width: 10px; height: 10px; border-radius: 999px; background: {{accent}}"></div>
+        </div>
+        <span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 26px; letter-spacing: -0.5px">Meetish.</span>
+      </div>
+      <p style="margin: 0; font-size: 15px; color: #5B606B; max-width: 560px">Günün planını dostlarla paylaş: “1 saata Murad ilə qəhvə”, “13:00 nahar”, “axşam gym”. Dostlar görür və bir toxunuşla qoşulur.</p>
+    </div>
+    <span style="font-size: 13px; color: #5B606B">Android · Material 3 əsaslı · v0.1 təklif</span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+    <div style="background: #FFFFFF; border: 1px solid #ECEDEF; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 8px">
+      <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 13px; color: {{accent}}">01</span>
+      <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 17px">Vaxt əsas qəhrəmandır</span>
+      <span style="font-size: 14px; line-height: 20px; color: #5B606B">Hər kartda ilk görünən “nə vaxt”dır: “45 dəq sonra”, “İndi”. Lent saata görə düzülür, alqoritmə görə yox.</span>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #ECEDEF; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 8px">
+      <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 13px; color: {{accent}}">02</span>
+      <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 17px">10 saniyədə plan</span>
+      <span style="font-size: 14px; line-height: 20px; color: #5B606B">Plan paylaşmaq 3 toxunuşdur: nə, nə vaxt, kim görsün. Yer istəyə bağlıdır, mətn yazmaq məcburi deyil.</span>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #ECEDEF; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 8px">
+      <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 13px; color: {{accent}}">03</span>
+      <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 17px">Bir rəng, bir hərəkət</span>
+      <span style="font-size: 14px; line-height: 20px; color: #5B606B">Ekran ağ-qara qalır. Narıncı yalnız “indi/tezliklə” və “Qoşul” üçündür, ona görə göz dərhal onu tapır.</span>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #ECEDEF; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 8px">
+      <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 13px; color: {{accent}}">04</span>
+      <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 17px">Yalnız dostlar, sakit</span>
+      <span style="font-size: 14px; line-height: 20px; color: #5B606B">Like, izləyici sayı, canlı lokasiya yoxdur. Planlar gün bitəndə yox olur, təzyiq hissi yaranmır.</span>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px">
+
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: #5B606B">Rənglər</span>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <div style="display: flex; align-items: center; gap: 12px"><div style="width: 44px; height: 44px; border-radius: 12px; background: #111318"></div><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Ink · #111318</span><span style="font-size: 12px; color: #5B606B">mətn, əsas düymə, FAB</span></div></div>
+        <div style="display: flex; align-items: center; gap: 12px"><div style="width: 44px; height: 44px; border-radius: 12px; background: {{accent}}"></div><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Narıncı · {{accent}}</span><span style="font-size: 12px; color: #5B606B">indi / tezliklə, Qoşul</span></div></div>
+        <div style="display: flex; align-items: center; gap: 12px"><div style="width: 44px; height: 44px; border-radius: 12px; background: #FDEBE5"></div><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Narıncı yumşaq · #FDEBE5</span><span style="font-size: 12px; color: #5B606B">vaxt çipi fonu</span></div></div>
+        <div style="display: flex; align-items: center; gap: 12px"><div style="width: 44px; height: 44px; border-radius: 12px; background: #5B606B"></div><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Ink 2 · #5B606B</span><span style="font-size: 12px; color: #5B606B">ikinci dərəcəli mətn (6.3:1)</span></div></div>
+        <div style="display: flex; align-items: center; gap: 12px"><div style="width: 44px; height: 44px; border-radius: 12px; background: #ECEDEF"></div><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Xətt · #ECEDEF</span><span style="font-size: 12px; color: #5B606B">kart çərçivəsi, ayırıcı</span></div></div>
+        <div style="display: flex; align-items: center; gap: 12px"><div style="width: 44px; height: 44px; border-radius: 12px; background: #FAFAFA; border: 1px solid #ECEDEF; box-sizing: border-box"></div><div style="display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">Fon · #FAFAFA / #FFFFFF</span><span style="font-size: 12px; color: #5B606B">ekran / kart</span></div></div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: #5B606B">Tipoqrafiya</span>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 30px; letter-spacing: -0.6px">Bu gün</span><span style="font-size: 12px; color: #5B606B">Manrope 800 · 30/36 · ekran başlığı</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 20px">Murad ilə qəhvə</span><span style="font-size: 12px; color: #5B606B">Manrope 700 · 20/26 · plan adı</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; line-height: 22px">Sahil parkının yanında, kim gəlir?</span><span style="font-size: 12px; color: #5B606B">Inter 400 · 15/22 · əsas mətn</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 13px; font-weight: 600">45 dəq sonra · 3 nəfər</span><span style="font-size: 12px; color: #5B606B">Inter 600 · 13/18 · etiket, çip</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #5B606B">Aysel qoşuldu</span><span style="font-size: 12px; color: #5B606B">Inter 400 · 12/16 · köməkçi</span></div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: #5B606B">Ölçü, künc, komponentlər</span>
+      <div style="display: flex; align-items: flex-end; gap: 10px">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px"><div style="width: 4px; height: 4px; background: #111318"></div><span style="font-size: 11px; color: #5B606B">4</span></div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px"><div style="width: 8px; height: 8px; background: #111318"></div><span style="font-size: 11px; color: #5B606B">8</span></div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px"><div style="width: 12px; height: 12px; background: #111318"></div><span style="font-size: 11px; color: #5B606B">12</span></div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px"><div style="width: 16px; height: 16px; background: #111318"></div><span style="font-size: 11px; color: #5B606B">16</span></div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px"><div style="width: 24px; height: 24px; background: #111318"></div><span style="font-size: 11px; color: #5B606B">24</span></div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px"><div style="width: 32px; height: 32px; background: #111318"></div><span style="font-size: 11px; color: #5B606B">32</span></div>
+      </div>
+      <span style="font-size: 13px; color: #5B606B">4 pt şəbəkə · kenar boşluq 20 · kart küncü 20 · sheet 28 · çip və düymə tam yuvarlaq · toxunma ≥ 48dp</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+        <button style="height: 48px; padding: 0 22px; border: none; border-radius: 999px; background: #111318; color: #FFFFFF; font-family: Inter, sans-serif; font-weight: 600; font-size: 15px">Paylaş</button>
+        <button style="height: 48px; padding: 0 22px; border: none; border-radius: 999px; background: {{accent}}; color: #FFFFFF; font-family: Inter, sans-serif; font-weight: 600; font-size: 15px">Qoşul</button>
+        <button style="height: 48px; padding: 0 22px; border: 1px solid #DADCE0; border-radius: 999px; background: #FFFFFF; color: #111318; font-family: Inter, sans-serif; font-weight: 600; font-size: 15px">Bəlkə</button>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px">
+        <span style="display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 999px; background: #FDEBE5; color: #B23517; font-size: 13px; font-weight: 600"><span style="width: 6px; height: 6px; border-radius: 999px; background: {{accent}}"></span>İndi</span>
+        <span style="display: inline-flex; align-items: center; height: 28px; padding: 0 10px; border-radius: 999px; background: #F1F2F4; color: #111318; font-size: 13px; font-weight: 600">19:30</span>
+        <span style="display: inline-flex; align-items: center; height: 32px; padding: 0 14px; border-radius: 999px; border: 1px solid #DADCE0; color: #111318; font-size: 13px; font-weight: 500">Yaxın dostlar</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#D9431F","options":["#D9431F","#2F5BEA","#0F8A5F","#111318"]},"$preview":{"width":1200,"height":980}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#D9431F' };
+  }
+}
+</script>
+</body>
+</html>
