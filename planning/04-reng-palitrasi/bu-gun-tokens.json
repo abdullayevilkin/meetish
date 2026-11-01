@@ -1,0 +1,138 @@
+{
+  "meetish/bu-gun": {
+    "esas": {
+      "ink": {
+        "$value": "#111318",
+        "$type": "color",
+        "$description": "Əsas mətn, başlıqlar, ikonlar"
+      },
+      "ink-2": {
+        "$value": "#5B606B",
+        "$type": "color",
+        "$description": "İkinci dərəcəli mətn (vaxt, yer, alt yazılar)"
+      },
+      "line": {
+        "$value": "#ECEDEF",
+        "$type": "color",
+        "$description": "Ayırıcı xətlər, nav bar üst xətti"
+      },
+      "border": {
+        "$value": "#DADCE0",
+        "$type": "color",
+        "$description": "Düymə və pill kənarları"
+      },
+      "surface": {
+        "$value": "#FFFFFF",
+        "$type": "color",
+        "$description": "Kartlar, nav bar, plan sətirləri"
+      },
+      "bg": {
+        "$value": "#FAFAFA",
+        "$type": "color",
+        "$description": "Səhifə fonu"
+      },
+      "chip": {
+        "$value": "#F1F2F4",
+        "$type": "color",
+        "$description": "Neytral chip/badge fonu, bağla düyməsi"
+      }
+    },
+    "aksent": {
+      "accent": {
+        "$value": "#D9431F",
+        "$type": "color",
+        "$description": "Yalnız 'indi/tezliklə' və Qoşul düyməsi"
+      },
+      "accent-soft": {
+        "$value": "#FDEBE5",
+        "$type": "color",
+        "$description": "Açılmış plan paneli (accordion) fonu"
+      },
+      "accent-text": {
+        "$value": "#B23517",
+        "$type": "color",
+        "$description": "Accent-soft üstündə mətn ('+1 yeni' və s.)"
+      },
+      "accent-muted": {
+        "$value": "#5B4A45",
+        "$type": "color",
+        "$description": "Qırmızı panel içində ikinci mətn"
+      }
+    },
+    "status": {
+      "bos": {
+        "$value": "#0F8A5F",
+        "$type": "color",
+        "$description": "Boş: nöqtə, avatar halqası"
+      },
+      "bos-soft": {
+        "$value": "#E7F4EC",
+        "$type": "color",
+        "$description": "Boş: status pill fonu"
+      },
+      "bos-text": {
+        "$value": "#33503F",
+        "$type": "color",
+        "$description": "Boş: pill içində ikinci mətn"
+      },
+      "planda": {
+        "$value": "#D9431F",
+        "$type": "color",
+        "$description": "Planda: nöqtə"
+      },
+      "planda-soft": {
+        "$value": "#FDEBE5",
+        "$type": "color",
+        "$description": "Planda: status pill fonu"
+      },
+      "planda-text": {
+        "$value": "#B23517",
+        "$type": "color",
+        "$description": "Planda: pill içində ikinci mətn"
+      },
+      "gizli": {
+        "$value": "#5B606B",
+        "$type": "color",
+        "$description": "Gizli: nöqtə"
+      },
+      "gizli-soft": {
+        "$value": "#F1F2F4",
+        "$type": "color",
+        "$description": "Gizli: status pill fonu"
+      },
+      "gizli-text": {
+        "$value": "#5B606B",
+        "$type": "color",
+        "$description": "Gizli: pill içində ikinci mətn"
+      }
+    },
+    "avatar": {
+      "avatar-1": {
+        "$value": "#DDE8FF",
+        "$type": "color",
+        "$description": "Avatar placeholder (mavi)"
+      },
+      "avatar-2": {
+        "$value": "#FFF0C9",
+        "$type": "color",
+        "$description": "Avatar placeholder (sarı)"
+      },
+      "avatar-3": {
+        "$value": "#FFE2D9",
+        "$type": "color",
+        "$description": "Avatar placeholder (şaftalı)"
+      },
+      "avatar-4": {
+        "$value": "#DDF2E6",
+        "$type": "color",
+        "$description": "Avatar placeholder (yaşıl)"
+      }
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "meetish/bu-gun"
+    ]
+  }
+}

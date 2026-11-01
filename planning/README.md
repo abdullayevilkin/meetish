@@ -24,3 +24,6 @@ Bu qovluqda layihənin planlama mərhələsinin artifactları və birinci səhif
 - Android dizayn kətanı: https://claude.ai/artifact/5Lmh4QWA8sD33ZMtWt3dWy
 
 Nüsxə tarixi: 2026-10-26. Kətandakı digər ekranlar (Sürətli plan, Plan detalı, Dostlar, Profil) birinci səhifəyə aid olmadığı üçün bura daxil edilməyib.
+
+## 04-reng-palitrasi
+Bu gün səhifəsi üçün rəng palitrası: `bu-gun-tokens.json` (Penpot → Tokens → Import ilə yüklənir) və `bu-gun-palitra.html` (vizual baxış).
